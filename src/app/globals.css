@@ -4,6 +4,12 @@
 :root {
   --background: #f8f8f8;
   --foreground: #171717;
+  --nav-background: #edecec;
+  --nav-text: #04080F;
+  --ps1: #262E3F;
+  --pst1: #F0F1F3;
+  --resume: #005cb8;
+  --resume-hover: #0966C2;
 }
 
 @theme inline {
@@ -11,6 +17,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-nav-background: var(--nav-background);
+  --color-nav-text: var(--nav-text);
+  --color-section-bg1: var(--ps1);
+  --color-section-text: var(--pst1);
+  --color-resume: var(--resume);
+  --color-resume-hover: var(--resume-hover);
+}
+
+@theme {
+  --breakpoint-custom-md: 860px;
 }
 
 @media (prefers-color-scheme: dark) {

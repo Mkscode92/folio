@@ -61,9 +61,9 @@ const DesktopNavBar = () => {
           </a>
         </li>
         <li> 
-          <a href="#certifications" className='flex item-center gap-2 px-4 py-2 rounded-full hover:bg-black hover:text-white transition-colors duration-300 transform hover:scale-105'>
+          <a href="#certificates" className='flex item-center gap-2 px-4 py-2 rounded-full hover:bg-black hover:text-white transition-colors duration-300 transform hover:scale-105'>
             <ShieldCheck className='w-5 h-5' />
-            <span>Certifications</span>
+            <span>Certificates</span>
           </a>
 
         </li>
@@ -172,7 +172,7 @@ const MobileNavBar = () => {
                     className="flex items-center justify-center gap-3 text-2xl hover:text-gray-600 transitions-colors"
                   >
                     <ShieldCheck className='w-6 h-6' />
-                    <span>Certifications</span>
+                    <span>Certificates</span>
                   </a>
                 </motion.li>
                 <motion.li

@@ -2,8 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import NavBar from '../components/navigation/NavBar'
 import { Hero } from '../components/sections/Hero'
-import Projects from '../components/sections/Projects'
+import {Projects} from '../components/sections/Projects'
 import Contact from '../components/sections/Contact'
+import Certificates from '../components/sections/Certificates'
 
 const HomePage = () => {
   return (
@@ -25,8 +26,8 @@ const HomePage = () => {
         <h1 className="text-4xl font-bold">Skills Section</h1>
       </section>
 
-      <section id="certifications" className="min-h-screen flex items-center justify-center bg-section-bg1 text-section-text border-b-10 border-blue-100">
-        <h1 className="text-4xl font-bold">Certifications Section</h1>
+      <section id="certificates" className="min-h-screen flex items-center justify-center bg-section-bg1 text-section-text border-b-10 border-blue-100">
+        <Certificates />
       </section>
       
       <section id="contact" className="min-h-[95vh] flex items-center justify-center bg-section-bg2 border-b-10 border-blue-100">

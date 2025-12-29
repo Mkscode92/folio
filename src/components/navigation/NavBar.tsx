@@ -167,7 +167,7 @@ const MobileNavBar = () => {
                   transition={{ delay: 0.5 }}
                 >
                   <a
-                    href="#certifications"
+                    href="#certificates"
                     onClick={() => setIsOpen(false)}
                     className="flex items-center justify-center gap-3 text-2xl hover:text-gray-600 transitions-colors"
                   >

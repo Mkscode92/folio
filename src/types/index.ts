@@ -12,7 +12,11 @@ export interface Project {
 
 export interface Certificate { 
     id: string;
+    company: string;
     title: string 
     image: string;
     link: string; 
 }
+
+
+

@@ -110,7 +110,7 @@ export const Projects = () => {
   );
 };
 
-// individual project cards
+
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   return (
     <motion.div

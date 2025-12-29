@@ -5,6 +5,8 @@ import { Hero } from '../components/sections/Hero'
 import {Projects} from '../components/sections/Projects'
 import Contact from '../components/sections/Contact'
 import Certificates from '../components/sections/Certificates'
+import { Skills } from '../components/sections/Skills'
+import Experience from '../components/sections/Experience'
 
 const HomePage = () => {
   return (
@@ -19,11 +21,11 @@ const HomePage = () => {
       </section>
       
       <section id="experience" className="min-h-screen flex items-center justify-center bg-section-bg1 text-section-text border-b-10 border-blue-100">
-        <h1 className="text-4xl font-bold">Experience Section</h1>
+        <Experience />
       </section>
       
       <section id="skills" className="min-h-screen flex items-center justify-center bg-section-bg2 border-b-10 border-blue-100">
-        <h1 className="text-4xl font-bold">Skills Section</h1>
+        <Skills />
       </section>
 
       <section id="certificates" className="min-h-screen flex items-center justify-center bg-section-bg1 text-section-text border-b-10 border-blue-100">

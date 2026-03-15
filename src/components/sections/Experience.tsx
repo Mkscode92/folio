@@ -17,6 +17,14 @@ interface Experiences {
 
 const experience: Experiences[] = [
   {id: "1",
+  title: "Operational Strategy & People Analytics Extern",
+  company: "Amazon",
+  duration: "March 2026 - Present", 
+  description: "Automated Python ETL workflows to ingest 5,000+ data points, performing sentiment analysis and keyword extraction to identify cultural trends and improve worker retention in Amazon Fullfillment Centers.",
+  tags: ["Python", "ETL Workflows", "Data Analytics", "Consulting"],
+  icon: "/images/amazon--600.png",
+  type: "work"},
+  {id: "2",
   title: "Automation Software Intern",
   company: "University of Illinois Chicago",
   duration: "June 2025 - August 2025", 
@@ -24,7 +32,7 @@ const experience: Experiences[] = [
   tags: ["Python", "OpenCV", "Computer Vision", "Automation"],
   icon: "/images/uic.jpg",
   type: "work"},
-  {id: "2",
+  {id: "3",
   title: "Full Stack Web Development Intern",
   company: "AiC Company",
   duration: "March 2024 - August 2024", 
@@ -32,7 +40,7 @@ const experience: Experiences[] = [
   tags: ["Javascript", "Node.js", "PostgreSQL", "Render", "Stripe API"],
   icon: "/images/aic.jpg",
   type: "work"},
-  {id: "3",
+  {id: "4",
   title: "SIG AI Project Lead",
   company: "UIC Association for Computing Machinery",
   duration: "October 2024 - December 2024", 
@@ -58,7 +66,7 @@ const Experience = () => {
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">Experience</h2>
                     <p className="text-xl text-left mb-2"><b>Work:</b></p>
-                    <div className="grid grid-cols-1 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                         {workExperiences.map((exp, index) => (
                             <ExperienceCard key={exp.id} exp={exp} index={index} />
                         ))}
@@ -83,39 +91,35 @@ const ExperienceCard = ({exp, index}: {exp: Experiences, index: number}) => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -5 }}
-              className="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all border border-white"
+              className="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all border border-white flex flex-col h-full"
             >
-              <div className="flex gap-6 mb-4">
+              <div className="flex gap-4 mb-4">
                 <div className="shrink-0">
-                  <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center overflow-hidden">
-                    <Image 
-                      src={exp.icon} 
+                  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+                    <Image
+                      src={exp.icon}
                       alt={exp.company}
-                      width={64}
-                      height={64}
+                      width={48}
+                      height={48}
                       className="object-cover"
                     />
                   </div>
                 </div>
-                
-                <div className="grow">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h3 className="text-2xl font-bold text-white text-left">{exp.title}</h3>
-                      <p className="text-gray-400 text-left">{exp.company}</p>
-                    </div>
-                    <p className="text-sm text-gray-400">{exp.duration}</p>
-                  </div>
+
+                <div className="grow min-w-0">
+                  <h3 className="text-base font-bold text-white text-left leading-snug">{exp.title}</h3>
+                  <p className="text-gray-400 text-sm text-left">{exp.company}</p>
+                  <p className="text-xs text-gray-500 text-left mt-0.5">{exp.duration}</p>
                 </div>
               </div>
 
-              <p className="text-gray-300 mb-4 leading-relaxed text-left">{exp.description}</p>
-        
-              <div className="flex gap-2 flex-wrap">
+              <p className="text-gray-300 mb-4 leading-relaxed text-left text-sm grow">{exp.description}</p>
+
+              <div className="flex gap-2 flex-wrap mt-auto">
                 {exp.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1 bg-white text-black font-medium text-sm rounded-full border border-blue-100"
+                    className="px-3 py-1 bg-white text-black font-medium text-xs rounded-full border border-blue-100"
                   >
                     {tag}
                   </span>

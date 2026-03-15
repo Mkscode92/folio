@@ -1,25 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  SiNextdotjs, 
-  SiReact, 
-  SiTypescript, 
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTypescript,
   SiPython,
   SiNodedotjs,
-  SiTailwindcss,
-  SiMongodb,
   SiPostgresql,
   SiGit,
   SiJavascript,
   SiClaude,
-  SiCplusplus,
   SiC,
-  SiPostman,  
   SiSupabase,
-  SiDocker
+  SiDocker,
+  SiFastapi,
+  SiNumpy,
+  SiOpencv,
+  SiLinux,
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { FaAws, FaDatabase } from "react-icons/fa";
 
 interface Skill {
   name: string;
@@ -28,23 +28,24 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "Python", icon: SiPython, color: "#3776AB" },
-  { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-  { name: "C++", icon: SiCplusplus, color: "#00599C" },
-  { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
-  { name: "React", icon: SiReact, color: "#61DAFB" },
-  { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-  { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-  { name: "Git", icon: SiGit, color: "#F05032" },
-  { name: "AWS", icon: FaAws, color: "#232F3E" },
-  {name: "Postman", icon: SiPostman, color: "#FF6C37"},
-  { name: "Docker", icon: SiDocker, color: "#2496ED" },
-  { name: "Claude", icon: SiClaude, color: "#CC785C" },
-  
-  
+  { name: "Python",       icon: SiPython,      color: "#3776AB" },
+  { name: "TypeScript",   icon: SiTypescript,  color: "#3178C6" },
+  { name: "JavaScript",   icon: SiJavascript,  color: "#F7DF1E" },
+  { name: "C",            icon: SiC,           color: "#A8B9CC" },
+  { name: "SQL",          icon: FaDatabase,    color: "#4479A1" },
+  { name: "React",        icon: SiReact,       color: "#61DAFB" },
+  { name: "Next.js",      icon: SiNextdotjs,   color: "#000000" },
+  { name: "Node.js",      icon: SiNodedotjs,   color: "#339933" },
+  { name: "FastAPI",      icon: SiFastapi,     color: "#009688" },
+  { name: "OpenCV",       icon: SiOpencv,      color: "#5C3EE8" },
+  { name: "NumPy",        icon: SiNumpy,       color: "#013243" },
+  { name: "Git",          icon: SiGit,         color: "#F05032" },
+  { name: "AWS",          icon: FaAws,         color: "#FF9900" },
+  { name: "PostgreSQL",   icon: SiPostgresql,  color: "#4169E1" },
+  { name: "Supabase",     icon: SiSupabase,    color: "#3ECF8E" },
+  { name: "Docker",       icon: SiDocker,      color: "#2496ED" },
+  { name: "Linux",        icon: SiLinux,       color: "#FCC624" },
+  { name: "Claude",       icon: SiClaude,      color: "#CC785C" },
 ];
 
 export const Skills = () => {
@@ -64,7 +65,7 @@ export const Skills = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-6 gap-6">
           {skills.map((skill, index) => {
             const Icon = skill.icon;
             return (

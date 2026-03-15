@@ -11,6 +11,16 @@ import Image from "next/image";
 const projects: Project[] = [
   {
     id: "1",
+    title: "Prism",
+    description: "An AI agentic pipeline that converts mobile app reviews into tested, secure GitHub pull requests automatically to fix related issues. Made during the HackIllinois 2026 hackathon.",
+    category: "AI",
+    tags: ["Python", "RAG", "Modal", "FastAPI", "Pinecone", "Claude"],
+    github: "https://github.com/Mkscode92/Prism",
+    devpost: "https://devpost.com/software/prism-9xac16",
+    image: "/images/prism-folio.png"
+  },
+  {
+    id: "2",
     title: "Verbexa",
     description: "Educational tutoring companion platform with AI voice agents for real-time conversations.",
     category: "AI",
@@ -19,7 +29,7 @@ const projects: Project[] = [
     image: "/images/verbexaV2.png"
   },
   {
-    id: "2",
+    id: "3",
     title: "SnapLink",
     description: "My group's project at the SparkHacks 2025 hackathon! It's a unique job posting app for underrepresented small businesses.",
     category: "Web",
@@ -29,7 +39,7 @@ const projects: Project[] = [
     image: "/images/sparkhacks.jpg"
   },
   {
-    id: "3",
+    id: "4",
     title: "StockBits",
     description: "A stock analysis messenger using Yahoo Finance data, Alpha Vantage news, ML price prediction, NLP sentiment analysis, and Twilio API to send SMS summaries for chosen stocks.",
     category: "Finance",
@@ -38,7 +48,7 @@ const projects: Project[] = [
     image: "/images/stocker.png"
   },
   {
-    id: "4",
+    id: "5",
     title: "SoccerRanker API",
     description: "Part of my multi-page SoccerRanker project - its a 2-in-1 real-time soccer news & player profiles API with an informative landing page and client side demos.",
     category: "Web",
@@ -47,7 +57,7 @@ const projects: Project[] = [
     image: "/images/soccerranker.png"
   },
   {
-    id: "5",
+    id: "6",
     title: "Everything Soccer",
     description: "An educational website covering all aspects of soccer including the rules of the game, club teams, international competitions, player profiles, domestic leagues, and more.",
     category: "Web",

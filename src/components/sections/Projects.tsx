@@ -52,7 +52,7 @@ const projects: Project[] = [
     title: "SoccerRanker API",
     description: "Part of my multi-page SoccerRanker project - its a 2-in-1 real-time soccer news & player profiles API with an informative landing page and client side demos.",
     category: "Web",
-    tags: ["JavaScript", "Node.js", "Bootstrap", "Render"],
+    tags: ["JavaScript", "Node.js", "AWS", "JSON"],
     website: "https://soccerranker.com/api.html",
     image: "/images/soccerranker.png"
   },

@@ -22,7 +22,7 @@ const experience: Experiences[] = [
   duration: "August 2026 - Present", 
   description: "",
   tags: ["Python", "TypeScript", "WebSockets", "Multi-Platform Systems", "Augmented Reality"],
-  icon: "/images/uiuc.jpg",
+  icon: "/images/uiuc.png",
   type: "work"},
   {id: "2",
   title: "Software Engineering Intern",

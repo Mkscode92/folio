@@ -40,7 +40,7 @@ export const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="flex gap-4 justify-left flex-wrap"
                     >
-                    <a
+                    {/* <a
                         href="/resume"
                         target="_blank" 
                         rel="noopener noreferrer" 
@@ -48,8 +48,7 @@ export const Hero = () => {
                     >
                         <Download className="w-4 h-4" />
                         Resume
-                    </a>
-
+                    </a> */}
                     <a
                         href="https://www.linkedin.com/in/mksrinivasula/"
                         target="_blank" 
